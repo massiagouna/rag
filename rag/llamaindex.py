@@ -68,7 +68,7 @@ def store_pdf_file(file_path: str, doc_name: str):
 
         for j, chunk in enumerate(chunks):
             try:
-                embedding = embedder.get_query_embedding(chunk)  # Important : use same method for both doc & query
+                embedding = embedder.get_query_embedding(chunk)  
                 node = TextNode(text=chunk)
                 node.embedding = embedding
                 node.metadata = {
