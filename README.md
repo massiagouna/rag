@@ -18,6 +18,7 @@ Cette application permet d'analyser des documents PDF à l'aide d'une IA (Azure 
 
  Ajouter les clés d’API dans .streamlit/secrets.toml
 crée un dossier .streamlit/ à la racine du projet, puis un fichier secrets.toml contenant tes clés Azure OpenAI :
+
 [embedding]
 azure_endpoint = "https://<TON_COMPTE>.openai.azure.com/"
 
