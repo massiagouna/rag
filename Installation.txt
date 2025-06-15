@@ -1,0 +1,12 @@
+installation :
+
+pip install langchain langchain-community
+pip install pyyaml  
+langchain_openai
+pip install llama_index     
+
+pip uninstall llama-index -y
+pip install llama-index==0.10.28
+pip install llama-index-embeddings-azure-openai llama-index-llms-azure-openai
+pip install llama_index.embeddings.azure_openai
+pip install pymupdf
