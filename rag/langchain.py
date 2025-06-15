@@ -22,6 +22,7 @@ def read_config(file_path):
             print(f"Erreur de lecture du fichier YAML : {e}")
             return {}
 
+
 config = {
     "embedding": {
         "azure_endpoint": st.secrets["embedding.azure_endpoint"],
