@@ -38,6 +38,6 @@ Dans un terminal, placez-vous à la racine du projet puis exécutez :
 pip install -r requirements.txt
 
 
-2. **Lancer l'application**
+4. **Lancer l'application**
 
 streamlit run app.py
