@@ -20,14 +20,20 @@ Cette application permet d'analyser des documents PDF à l'aide d'une IA (Azure 
 crée un dossier .streamlit/ à la racine du projet, puis un fichier secrets.toml contenant tes clés Azure OpenAI :
 [embedding]
 azure_endpoint = "https://<TON_COMPTE>.openai.azure.com/"
+
 azure_deployment = "nom-du-deployment-pour-les-embeddings"
+
 azure_api_key = "clé-api-pour-les-embeddings"
+
 azure_api_version = "2024-02-15-preview"
 
 [chat]
 azure_endpoint = "https://<TON_COMPTE>.openai.azure.com/"
+
 azure_deployment = "nom-du-deployment-pour-le-chat"
+
 azure_api_key = "clé-api-pour-le-chat"
+
 azure_api_version = "2024-02-15-preview"
 
 
