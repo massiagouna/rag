@@ -21,20 +21,18 @@ def read_config(file_path):
         except yaml.YAMLError as e:
             print(f"Erreur de lecture du fichier YAML : {e}")
             return {}
-
-
 config = {
     "embedding": {
-        "azure_endpoint": st.secrets["embedding.azure_endpoint"],
-        "azure_deployment": st.secrets["embedding.azure_deployment"],
-        "azure_api_key": st.secrets["embedding.azure_api_key"],
-        "azure_api_version": st.secrets["embedding.azure_api_version"],
+        "azure_endpoint": st.secrets["embedding"]["azure_endpoint"],
+        "azure_deployment": st.secrets["embedding"]["azure_deployment"],
+        "azure_api_key": st.secrets["embedding"]["azure_api_key"],
+        "azure_api_version": st.secrets["embedding"]["azure_api_version"],
     },
     "chat": {
-        "azure_endpoint": st.secrets["chat.azure_endpoint"],
-        "azure_deployment": st.secrets["chat.azure_deployment"],
-        "azure_api_key": st.secrets["chat.azure_api_key"],
-        "azure_api_version": st.secrets["chat.azure_api_version"],
+        "azure_endpoint": st.secrets["chat"]["azure_endpoint"],
+        "azure_deployment": st.secrets["chat"]["azure_deployment"],
+        "azure_api_key": st.secrets["chat"]["azure_api_key"],
+        "azure_api_version": st.secrets["chat"]["azure_api_version"],
     }
 }
 
