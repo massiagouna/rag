@@ -16,21 +16,20 @@ Cette application permet d'analyser des documents PDF à l'aide d'une IA (Azure 
 
 2. **Ajouter un fichier de configuration**
 
-   Créez un dossier `secrets/` à la racine du projet.  
-   À l’intérieur, ajoutez un fichier `config.yaml` contenant vos clés Azure OpenAI :
+ Ajouter les clés d’API dans .streamlit/secrets.toml
+crée un dossier .streamlit/ à la racine du projet, puis un fichier secrets.toml contenant tes clés Azure OpenAI :
+[embedding]
+azure_endpoint = "https://<TON_COMPTE>.openai.azure.com/"
+azure_deployment = "nom-du-deployment-pour-les-embeddings"
+azure_api_key = "clé-api-pour-les-embeddings"
+azure_api_version = "2024-02-15-preview"
 
-   ```yaml
-   chat:
-     azure_endpoint: "https://..."
-     azure_deployment: "..."
-     azure_api_key: "..."
-     azure_api_version: "..."
+[chat]
+azure_endpoint = "https://<TON_COMPTE>.openai.azure.com/"
+azure_deployment = "nom-du-deployment-pour-le-chat"
+azure_api_key = "clé-api-pour-le-chat"
+azure_api_version = "2024-02-15-preview"
 
-   embedding:
-     azure_endpoint: "https://..."
-     azure_deployment: "..."
-     azure_api_key: "..."
-     azure_api_version: "..."
 
 3. **Installer les dépendances**
 Dans un terminal, placez-vous à la racine du projet puis exécutez :
