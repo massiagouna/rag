@@ -7,6 +7,9 @@ Cette application permet d'analyser des documents PDF à l'aide d'une IA (Azure 
 
 ## ⚙️ Étapes d'installation
 
+
+0. **Assurez vous d'avoir une version récente de python (version 3.13 utilisée pour le projet)**
+
 1. **Télécharger le dossier du projet**
 
    Clonez ou téléchargez ce dépôt sur votre machine.
@@ -28,12 +31,13 @@ Cette application permet d'analyser des documents PDF à l'aide d'une IA (Azure 
      azure_deployment: "..."
      azure_api_key: "..."
      azure_api_version: "..."
-Installer les dépendances
 
+3. **Installer les dépendances**
 Dans un terminal, placez-vous à la racine du projet puis exécutez :
 
 pip install -r requirements.txt
 
-Lancer l'application
+
+2. **Lancer l'application**
 
 streamlit run app.py
